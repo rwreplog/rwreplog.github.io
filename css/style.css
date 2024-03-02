@@ -46,6 +46,12 @@ nav {
   font-size: 1.5rem;
 }
 
+p > a {
+  color: rgb(26, 97, 126);
+  text-decoration: none;
+  text-decoration-color: rgb(26, 97, 126);
+}
+
 a {
   color: white;
   text-decoration: none;
