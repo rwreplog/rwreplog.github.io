@@ -28,22 +28,34 @@ a,
 
 /* DESKTOP NAV */
 
-nav,
-.nav-links {
-  display: flex;
-}
-
 nav {
-  justify-content: space-around;
-  align-items: center;
-  height: 17vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 100vh;
   background-color: rgb(26, 97, 126);
-}
 
-.nav-links {
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.5rem;
+  .nav-link-1 {
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-link-2 {
+    height: 76vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-link-3 {
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 p > a {
@@ -456,7 +468,7 @@ footer p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #ffffff;
+  color: #cfcfcf;
 }
 
 .loading-overlay-img {
