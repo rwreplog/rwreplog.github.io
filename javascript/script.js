@@ -10,6 +10,11 @@ $(".nav-link-2").on("click", () => {
   openNav();
 });
 
+$(".nav-mobile-link-2").on("click", () => {
+  openMobileNavBg();
+  openMobileNav();
+});
+
 function openNav() {
   const nav = document.querySelector("nav");
   nav.classList.toggle("open");
@@ -17,6 +22,16 @@ function openNav() {
 
 function openNavBg() {
   const navBg = document.querySelector(".nav-bg");
+  navBg.classList.toggle("open");
+}
+
+function openMobileNav() {
+  const nav = document.querySelector(".mobile-nav");
+  nav.classList.toggle("open");
+}
+
+function openMobileNavBg() {
+  const navBg = document.querySelector(".mobile-nav-bg");
   navBg.classList.toggle("open");
 }
 
