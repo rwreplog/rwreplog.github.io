@@ -5,6 +5,21 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+$(".nav-link-2").on("click", () => {
+  openNavBg();
+  openNav();
+});
+
+function openNav() {
+  const nav = document.querySelector("nav");
+  nav.classList.toggle("open");
+}
+
+function openNavBg() {
+  const navBg = document.querySelector(".nav-bg");
+  navBg.classList.toggle("open");
+}
+
 var loader = {
   showLoader: function () {
     jQuery(".loading-overlay").show();
