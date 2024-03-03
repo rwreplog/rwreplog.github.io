@@ -44,15 +44,17 @@ nav {
   .nav-link-1 {
     height: 12vh;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    margin-left: 25px;
   }
 
   .nav-link-2 {
     height: 76vh;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    margin-left: 25px;
 
     cursor: pointer;
   }
@@ -60,8 +62,9 @@ nav {
   .nav-link-3 {
     height: 12vh;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    margin-left: 25px;
   }
 }
 
@@ -75,26 +78,27 @@ nav.open {
   .nav-link-1 {
     height: 12vh;
     display: flex;
-    justify-content: right;
+    justify-content: left;
     align-items: center;
-    margin-right: 25px;
+    margin-left: 25px;
   }
 
   .nav-link-2 {
     height: 76vh;
     display: flex;
-    justify-content: right;
+    justify-content: left;
     align-items: center;
-    margin-right: 25px;
+    margin-left: 25px;
+    align-items: center;
     cursor: pointer;
   }
 
   .nav-link-3 {
     height: 12vh;
     display: flex;
-    justify-content: right;
+    justify-content: left;
     align-items: center;
-    margin-right: 25px;
+    margin-left: 25px;
   }
 }
 
@@ -172,14 +176,16 @@ a:hover {
     width: 12vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 20px;
   }
 
   .nav-mobile-link-2 {
     width: 76vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 20px;
 
     cursor: pointer;
   }
@@ -188,7 +194,8 @@ a:hover {
     width: 12vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 20px;
   }
 }
 
@@ -203,25 +210,25 @@ a:hover {
     width: 12vw;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    margin-bottom: 25px;
+    align-items: flex-start;
+    margin-top: 20px;
   }
 
   .nav-mobile-link-2 {
     width: 76vw;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    margin-bottom: 25px;
+    align-items: flex-start;
     cursor: pointer;
+    margin-top: 20px;
   }
 
   .nav-mobile-link-3 {
     width: 12vw;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    margin-bottom: 25px;
+    align-items: flex-start;
+    margin-top: 20px;
   }
 }
 
