@@ -10,7 +10,10 @@ $(".nav-mobile-link-2").on("click", () => {
 
 function openNav() {
   const nav = document.querySelector("nav");
+  const articles = document.querySelector(".articles");
+
   nav.classList.toggle("open");
+  articles.classList.toggle("open");
 }
 
 function openNavBg() {

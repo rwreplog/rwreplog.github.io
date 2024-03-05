@@ -7,6 +7,10 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: hsl(0 0% 6%);
 }
 
 html {
@@ -32,7 +36,7 @@ nav {
   left: 0;
   width: 75px;
   height: 100vh;
-  background-color: rgb(26, 97, 126);
+  background-color: rgb(59, 59, 59);
   -webkit-transition: all 1.1s ease;
   -moz-transition: all 1.1s ease;
   -o-transition: all 1.1s ease;
@@ -45,6 +49,7 @@ nav {
     justify-content: left;
     align-items: center;
     margin-left: 20px;
+    width: 75px;
   }
 
   .nav-link-2 {
@@ -53,6 +58,7 @@ nav {
     justify-content: left;
     align-items: center;
     margin-left: 20px;
+    width: 75px;
 
     cursor: pointer;
   }
@@ -63,6 +69,7 @@ nav {
     justify-content: left;
     align-items: center;
     margin-left: 20px;
+    width: 75px;
   }
 }
 
@@ -162,7 +169,7 @@ a:hover {
   left: 0;
   width: 100vw;
   height: 50px;
-  background-color: rgb(26, 97, 126);
+  background-color: rgb(59, 59, 59);
   -webkit-transition: all 1.1s ease;
   -moz-transition: all 1.1s ease;
   -o-transition: all 1.1s ease;
@@ -278,14 +285,6 @@ section {
   text-align: left;
   width: 90vw;
   padding: 25px;
-  /* box-shadow: #121212 0px 1px 5px; */
-}
-
-#socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
 }
 
 /* ICONS */
@@ -308,4 +307,58 @@ footer p {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("https://assets.codepen.io/605876/GeistVF.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --size: 20px;
+}
+
+.el {
+  background: conic-gradient(
+    from 180deg at 50% 70%,
+    hsla(0, 0%, 98%, 1) 0deg,
+    #709ab9 72.0000010728836deg,
+    #4dffbf 144.0000021457672deg,
+    #709ab9 216.00000858306885deg,
+    #4dffbf 288.0000042915344deg,
+    hsla(0, 0%, 98%, 1) 1turn
+  );
+  width: 100%;
+  height: 100%;
+  mask: radial-gradient(circle at 50% 50%, white 2px, transparent 2.5px) 50% 50% /
+      var(--size) var(--size),
+    url("https://assets.codepen.io/605876/noise-mask.png") 256px 50% / 256px
+      256px;
+  mask-composite: intersect;
+  animation: flicker 20s infinite linear;
+}
+
+/* h1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  margin: 0;
+  font-size: clamp(6rem, 8vw + 1rem, 14rem);
+  font-family: "Geist", sans-serif;
+  font-weight: 140;
+  color: hsl(0 0% 2%);
+  mix-blend-mode: soft-light;
+  filter: drop-shadow(0 0 2px white);
+  text-shadow: 2px 2px white;
+} */
+
+@keyframes flicker {
+  to {
+    mask-position: 50% 50%, 0 50%;
+  }
 }
