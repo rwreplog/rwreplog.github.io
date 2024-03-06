@@ -373,7 +373,8 @@ footer p {
     top: -15px;
   }
 }
-.nav-toggle-btn:hover::before {
+.nav-toggle-btn:hover::before,
+.nav-toggle-btn:active::before {
   opacity: 0;
   transform: scale(0.5, 0.5);
 }
@@ -391,7 +392,8 @@ footer p {
   box-shadow: rgba(50, 50, 50, 0.6) 0px 0px 5px;
   transform: scale(1.2, 1.2);
 }
-.nav-toggle-btn:hover::after {
+.nav-toggle-btn:hover::after,
+.nav-toggle-btn:active::after {
   opacity: 1;
   transform: scale(1, 1);
 }
