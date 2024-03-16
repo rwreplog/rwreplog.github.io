@@ -44,7 +44,7 @@ function openDisplayView() {
 var navIcon = {
   open: () => {
     $(".nav-icon").animate(
-      { deg: 360 },
+      { deg: 405 },
       {
         duration: 800,
         step: function (now) {
@@ -56,7 +56,7 @@ var navIcon = {
 
   close: () => {
     $(".nav-icon").animate(
-      { deg: -180 },
+      { deg: -270 },
       {
         duration: 800,
         step: function (now) {

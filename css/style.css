@@ -382,7 +382,7 @@ footer p {
     border-color: rgba(155, 155, 155, 0.8);
   }
   50% {
-    border-color: rgba(155, 155, 155, 0.2);
+    border-color: rgba(0, 0, 0, 0.2);
   }
   100% {
     border-color: rgba(155, 155, 155, 0.8);
