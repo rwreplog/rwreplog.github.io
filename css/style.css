@@ -136,7 +136,7 @@ nav.open {
 .display {
   z-index: 100;
   width: 90%;
-  display: flex;
+  display: none;
   justify-content: space-evenly;
 
   .highlight {
