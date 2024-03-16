@@ -33,10 +33,10 @@ function openMobileNavBg() {
 
 function openDisplayView() {
   if (nav.classList.contains("open") || mobNav.classList.contains("open")) {
-    $(".display").css("display", "flex").toggle().fadeIn(2000);
+    $(".display").fadeOut();
     navIcon.open();
   } else {
-    $(".display").fadeOut();
+    $(".display").css("display", "flex").toggle().fadeIn(2000);
     navIcon.close();
   }
 }
