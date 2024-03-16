@@ -1,19 +1,19 @@
 $(".nav-link-2").on("click", () => {
   openNavBg();
   openNav();
+  openDisplayView();
 });
 
 $(".nav-mobile-link-2").on("click", () => {
   openMobileNavBg();
   openMobileNav();
+  openDisplayView();
 });
 
 function openNav() {
   const nav = document.querySelector("nav");
-  const articles = document.querySelector(".articles");
 
   nav.classList.toggle("open");
-  articles.classList.toggle("open");
 }
 
 function openNavBg() {
@@ -29,6 +29,14 @@ function openMobileNav() {
 function openMobileNavBg() {
   const navBg = document.querySelector(".mobile-nav-bg");
   navBg.classList.toggle("open");
+}
+
+function openDisplayView() {
+  if ($(".display").css("display") === "flex") {
+    $(".display").fadeOut();
+  } else {
+    $(".display").css("display", "flex").toggle().fadeIn(2000);
+  }
 }
 
 var loader = {
