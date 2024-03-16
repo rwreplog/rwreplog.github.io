@@ -1,3 +1,8 @@
+const nav = document.querySelector("nav");
+const navBg = document.querySelector(".nav-bg");
+const mobNav = document.querySelector(".mobile-nav");
+const mobNavBg = document.querySelector(".mobile-nav-bg");
+
 $(".nav-link-2").on("click", () => {
   openNavBg();
   openNav();
@@ -11,33 +16,56 @@ $(".nav-mobile-link-2").on("click", () => {
 });
 
 function openNav() {
-  const nav = document.querySelector("nav");
-
   nav.classList.toggle("open");
 }
 
 function openNavBg() {
-  const navBg = document.querySelector(".nav-bg");
   navBg.classList.toggle("open");
 }
 
 function openMobileNav() {
-  const nav = document.querySelector(".mobile-nav");
-  nav.classList.toggle("open");
+  mobNav.classList.toggle("open");
 }
 
 function openMobileNavBg() {
-  const navBg = document.querySelector(".mobile-nav-bg");
-  navBg.classList.toggle("open");
+  mobNavBg.classList.toggle("open");
 }
 
 function openDisplayView() {
-  if ($(".display").css("display") === "flex") {
+  if (nav.classList.contains("open") || mobNav.classList.contains("open")) {
     $(".display").fadeOut();
+    navIcon.open();
   } else {
     $(".display").css("display", "flex").toggle().fadeIn(2000);
+    navIcon.close();
   }
 }
+
+var navIcon = {
+  open: () => {
+    $(".nav-icon").animate(
+      { deg: 360 },
+      {
+        duration: 800,
+        step: function (now) {
+          $(this).css({ transform: "rotate(" + now + "deg)" });
+        },
+      }
+    );
+  },
+
+  close: () => {
+    $(".nav-icon").animate(
+      { deg: -180 },
+      {
+        duration: 800,
+        step: function (now) {
+          $(this).css({ transform: "rotate(" + now + "deg)" });
+        },
+      }
+    );
+  },
+};
 
 var loader = {
   showLoader: function () {
