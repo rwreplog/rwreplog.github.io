@@ -48,7 +48,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          cache-dependency-path: nextjs-porfoltio/package-lock.json
+          cache-dependency-path: nextjs-portfolio/package-lock.json
           node-version: "20"
           cache: "npm"
 
