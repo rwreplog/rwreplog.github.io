@@ -35,7 +35,7 @@ jobs:
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          if [ -f "nextjs-portfolio/package.json" ]; then
+          if [ -f "package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
             echo "runner=npx --no-install" >> $GITHUB_OUTPUT
@@ -48,7 +48,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          cache-dependency-path: nextjs-portfolio/package-lock.json
+          cache-dependency-path: package-lock.json
           node-version: "20"
           cache: "npm"
 
@@ -68,10 +68,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          if [ -e "nextjs-portfolio/package-lock.json" ]; then
-          cd nextjs-portfolio npm ci
+          if [ -e "package-lock.json" ]; then
+          npm ci
           else 
-          cd nextjs-portfolio npm i
+          npm i
           fi
 
       - name: Build with Next.js
