@@ -68,10 +68,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          if [ -e package-lock.json ]; then
-          npm ci
+          if [ -e "nextjs-portfolio/package-lock.json" ]; then
+          cd nextjs-portfolio npm ci
           else 
-          npm i
+          cd nextjs-portfolio npm i
           fi
 
       - name: Build with Next.js
