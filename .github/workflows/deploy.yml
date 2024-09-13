@@ -50,7 +50,7 @@ jobs:
         with:
           cache-dependency-path: nextjs-porfoltio/package-lock.json
           node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
+          cache: "npm"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
