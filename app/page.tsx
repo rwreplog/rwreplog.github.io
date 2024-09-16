@@ -2,7 +2,6 @@ import Grid from "@/components/grid";
 import Hero from "@/components/hero";
 import { FloatingNav } from "@/components/ui/floatingNav";
 import { navItems } from "@/data";
-import { FaHouse } from "react-icons/fa6";
 
 export default function Home() {
   return (
