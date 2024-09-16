@@ -215,3 +215,36 @@ export const socialMedia = [
     img: "/link.svg"
   }
 ];
+
+export const products = [
+  {
+    title: "Test",
+    link: "",
+    thumbnail: "/git.svg"
+  },
+  {
+    title: "Test",
+    link: "",
+    thumbnail: "/git.svg"
+  },
+  {
+    title: "Test",
+    link: "",
+    thumbnail: "/git.svg"
+  },
+  {
+    title: "Test",
+    link: "",
+    thumbnail: "/git.svg"
+  },
+  {
+    title: "Test",
+    link: "",
+    thumbnail: "/git.svg"
+  },
+  {
+    title: "Test",
+    link: "",
+    thumbnail: "/git.svg"
+  }
+];

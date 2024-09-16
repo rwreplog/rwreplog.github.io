@@ -1,7 +1,8 @@
 import Grid from "@/components/grid";
 import Hero from "@/components/hero";
 import { FloatingNav } from "@/components/ui/floatingNav";
-import { navItems } from "@/data";
+import { HeroParallax } from "@/components/ui/parallax";
+import { navItems, products } from "@/data";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
 
         <Hero></Hero>
         <Grid></Grid>
+        <HeroParallax products={products}></HeroParallax>
       </div>
     </main>
   );
