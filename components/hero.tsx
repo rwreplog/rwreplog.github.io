@@ -1,8 +1,7 @@
 import React from "react";
-import { Spotlight } from "./ui/spotlight";
 import { TextGenerateEffect } from "./ui/textGenerateEffect";
 import MagicButton from "./ui/magicButton";
-import { FaGithub, FaLinkedin, FaCodepen, FaLink } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaCodepen } from "react-icons/fa6";
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">

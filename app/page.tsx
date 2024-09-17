@@ -1,7 +1,5 @@
 import Grid from "@/components/grid";
 import Hero from "@/components/hero";
-import { FloatingNav } from "@/components/ui/floatingNav";
-import { navItems } from "@/data";
 
 export default function Home() {
   return (
