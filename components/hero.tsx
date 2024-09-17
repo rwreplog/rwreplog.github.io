@@ -2,23 +2,11 @@ import React from "react";
 import { Spotlight } from "./ui/spotlight";
 import { TextGenerateEffect } from "./ui/textGenerateEffect";
 import MagicButton from "./ui/magicButton";
-import { FaLaptop } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaCodepen, FaLink } from "react-icons/fa6";
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
-      <div>
-        <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-          fill="white"
-        />
-        <Spotlight
-          className="top-10 left-full h-[80vh] w-[50vw]"
-          fill="purple"
-        />
-        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
-      </div>
-
-      <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.01] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
+      <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.05] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
       <div className="h-10 w-3/6 flex items-center justify-center relative ml-auto mr-auto -mb-10 mt-10">
@@ -39,13 +27,37 @@ const Hero = () => {
             United States.
           </p>
 
-          <a href="#about">
-            <MagicButton
-              title="See my work"
-              icon={<FaLaptop />}
-              position="left"
-            />
-          </a>
+          <div>
+            <a
+              href="https://github.com/rwreplog"
+              target="_blank"
+              className="inline-block"
+            >
+              <MagicButton title="GitHub" icon={<FaGithub />} position="left" />
+            </a>
+            <a
+              href="https://codepen.io/ryan-the-dev"
+              target="_blank"
+              className="inline-block ml-10"
+            >
+              <MagicButton
+                title="CodePen"
+                icon={<FaCodepen />}
+                position="left"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ryan-w-replogle-5693542a/"
+              target="_blank"
+              className="inline-block ml-10"
+            >
+              <MagicButton
+                title="LinkedIn"
+                icon={<FaLinkedin />}
+                position="left"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
