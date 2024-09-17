@@ -4,7 +4,7 @@ import MagicButton from "./ui/magicButton";
 import { FaGithub, FaLinkedin, FaCodepen } from "react-icons/fa6";
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-8 pt-14">
       <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.05] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
@@ -37,7 +37,7 @@ const Hero = () => {
             <a
               href="https://codepen.io/ryan-the-dev"
               target="_blank"
-              className="inline-block ml-10"
+              className="inline-block ml-4 md:ml-10"
             >
               <MagicButton
                 title="CodePen"
@@ -48,7 +48,7 @@ const Hero = () => {
             <a
               href="https://www.linkedin.com/in/ryan-w-replogle-5693542a/"
               target="_blank"
-              className="inline-block ml-10"
+              className="inline-block ml-4 md:ml-10"
             >
               <MagicButton
                 title="LinkedIn"
