@@ -1,4 +1,3 @@
-import Grid from "@/components/grid";
 import Hero from "@/components/hero";
 
 export default function Home() {
@@ -8,7 +7,7 @@ export default function Home() {
         {/* <FloatingNav navItems={navItems} /> */}
 
         <Hero></Hero>
-        <Grid></Grid>
+        {/* <Grid></Grid> */}
       </div>
     </main>
   );
